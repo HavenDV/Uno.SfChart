@@ -128,10 +128,10 @@
     <BundleResource Include="Resources\Fonts\winjs-symbols.ttf" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Uno.UI" Version="3.5.1" />
-    <PackageReference Include="Uno.UI.RemoteControl" Version="3.5.1" Condition="'$(Configuration)'=='Debug'" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="1.1.1" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Filter" Version="1.1.1" />
+    <PackageReference Include="Uno.UI" Version="4.4.13" />
+    <PackageReference Include="Uno.UI.RemoteControl" Version="4.4.13" Condition="'$(Configuration)'=='Debug'" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Filter" Version="1.1.2" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Media.xcassets\AppIcons.appiconset\Contents.json">
@@ -163,9 +163,9 @@
     </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Syncfusion.SfChart.Uno.csproj">
-      <Project>{d4281c46-33cf-4b03-b0df-d2c010729a8b}</Project>
-      <Name>Syncfusion.SfChart.Uno</Name>
+    <ProjectReference Include="..\..\Src\H.Syncfusion.SfChart.Uno\H.Syncfusion.SfChart.Uno.csproj">
+      <Project>{74197824-42de-4671-b13e-b888529654ca}</Project>
+      <Name>H.Syncfusion.SfChart.Uno</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="..\SampleBrowser.SfChart.Shared\SampleBrowser.SfChart.Shared.projitems" Label="Shared" Condition="Exists('..\SampleBrowser.SfChart.Shared\SampleBrowser.SfChart.Shared.projitems')" />
