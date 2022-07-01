@@ -7,11 +7,7 @@
     <DefineConstants>$(DefineConstants);TRACE;NETFX_CORE;WINDOWS_UAP;SyncfusionFramework4_6;UNIVERSALWINDOWS;Uno</DefineConstants>
     <!-- Ensures the .xr.xml files are generated in a proper layout folder -->
     <GenerateLibraryLayout>true</GenerateLibraryLayout>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <Copyright>Syncfusion</Copyright>
-    <Description>Syncfusion Chart control for Uno</Description>
-    <PackageProjectUrl>https://www.syncfusion.com</PackageProjectUrl>
-    <DefineConstants>$(DefineConstants);HAS_WINUI</DefineConstants>
+    <RootNamespace>Syncfusion.SfChart.Uno</RootNamespace>
   </PropertyGroup>
   
   <ItemGroup Label="GlobalUsings">
@@ -23,7 +19,7 @@
   </PropertyGroup>
   
   <ItemGroup>
-    <PackageReference Include="Uno.WinUI" Version="4.4.13" />
+    <PackageReference Include="Uno.UI" Version="4.4.13" />
   </ItemGroup>
     
   <ItemGroup>
@@ -46,6 +42,6 @@
     </EmbeddedResource>
   </ItemGroup>
   
-	<Import Project="..\Syncfusion.SfChart.Uno.Shared\Syncfusion.SfChart.Uno.Shared.projitems" Label="Shared" />
+	<Import Project="..\H.Syncfusion.SfChart.Uno.Shared\H.Syncfusion.SfChart.Uno.Shared.projitems" Label="Shared" />
 
 </Project>

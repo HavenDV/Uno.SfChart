@@ -1,0 +1,23 @@
+﻿name: Build, test and publish
+on: [ push ]
+
+jobs:
+  build-test-publish:
+    name: Build, test and publish
+    uses: HavenDV/workflows/.github/workflows/dotnet_build-test-publish.yml@main
+    with:
+      os: windows-latest
+      generate-build-number: false
+      conventional-commits-publish-conditions: false
+    secrets:
+      nuget-key: ${{ secrets.NUGET_KEY }}
+
+  #WebAssembly:
+  #  uses: HavenDV/workflows/.github/workflows/dotnet_build-test-publish.yml@main
+  #  with:
+  #    os: windows-2022
+  #    project-path: src/apps/Uno/H.OxyPlot.Apps.Uno.WebAssembly
+  #    additional-dotnet-version: 5.0.x
+  #    deploy-web-assembly-path: src/apps/Uno/H.OxyPlot.Apps.Uno.WebAssembly/bin/Release/net6.0/dist
+  #    generate-build-number: false
+  #    workloads: android ios maccatalyst macos
