@@ -20,7 +20,7 @@
                     {
 
 #if WINDOWS_UAP
-                        Source = new Uri(@"ms-appx:///Syncfusion.SfChart.Uno/Themes/Generic.Legend.xaml")
+                        Source = new Uri(@"ms-appx:///H.Syncfusion.SfChart.Uno/Themes/Generic.Legend.xaml")
 #endif
                     };
 
@@ -41,7 +41,7 @@
                     genericSymbolDictionary = new ResourceDictionary()
                     {
 #if WINDOWS_UAP
-                        Source = new Uri(@"ms-appx:///Syncfusion.SfChart.Uno/Themes/Generic.Symbol.xaml")
+                        Source = new Uri(@"ms-appx:///H.Syncfusion.SfChart.Uno/Themes/Generic.Symbol.xaml")
 #endif
                     };
                 }
@@ -62,7 +62,7 @@
                     genericCommonDictionary = new ResourceDictionary()
                     {
 #if WINDOWS_UAP
-                        Source = new Uri(@"ms-appx:///Syncfusion.SfChart.Uno/Themes/Generic.Common.xaml")
+                        Source = new Uri(@"ms-appx:///H.Syncfusion.SfChart.Uno/Themes/Generic.Common.xaml")
 #endif
                     };
                 }

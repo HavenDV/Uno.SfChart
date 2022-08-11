@@ -53,7 +53,7 @@ The end-user experience is greatly enhanced by a set of user interaction feature
 This section explains how to add the Synfusion Uno Charts to your application and use its basic features.
 
 **Step 1**
-Add Syncfusion.SfChart.Uno source project to your application.
+Add H.Syncfusion.SfChart.Uno source project to your application.
 
 **Step 2**
 Reference the source in the projects of all the platforms.

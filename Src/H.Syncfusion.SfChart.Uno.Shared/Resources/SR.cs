@@ -14,7 +14,7 @@ namespace Syncfusion.UI.Xaml.Charts
             ResourceLoader localizedManager = GetLocalizedResourceManager();
             if (localizedManager == null)
             {
-                this.resources = ResourceLoader.GetForCurrentView("Syncfusion.SfChart.Uno/Syncfusion.SfChart.Uno.Resources");               
+                this.resources = ResourceLoader.GetForCurrentView("H.Syncfusion.SfChart.Uno/Syncfusion.SfChart.Uno.Resources");               
             }
             else
             {
@@ -40,7 +40,7 @@ namespace Syncfusion.UI.Xaml.Charts
                 }
                 if (Application.Current != null)
                 {
-                    ResourceLoader manager = ResourceLoader.GetForCurrentView("Syncfusion.SfChart.Uno.Resources");
+                    ResourceLoader manager = ResourceLoader.GetForCurrentView("H.Syncfusion.SfChart.Uno.Resources");
                     return manager;
                 }
             }
@@ -80,7 +80,7 @@ namespace Syncfusion.UI.Xaml.Charts
             localizedString= sr.resources.GetString(name);
             if (string.IsNullOrEmpty(localizedString))
             {
-                var resources = ResourceLoader.GetForCurrentView("Syncfusion.SfChart.Uno/Syncfusion.SfChart.UWP.Resources");
+                var resources = ResourceLoader.GetForCurrentView("H.Syncfusion.SfChart.Uno/Syncfusion.SfChart.Uno.Resources");
                 localizedString = resources.GetString(name);
             }                
             return localizedString;

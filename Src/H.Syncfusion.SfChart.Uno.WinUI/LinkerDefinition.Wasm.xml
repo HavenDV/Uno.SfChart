@@ -1,5 +1,5 @@
 ﻿<linker>
-  <assembly fullname="Syncfusion.SfChart.Uno.WinUI">
+  <assembly fullname="H.Syncfusion.SfChart.Uno.WinUI">
 	<type fullname="Syncfusion.UI.Xaml.Charts.SfChartResourceWrapper"/>
   </assembly>
 </linker>

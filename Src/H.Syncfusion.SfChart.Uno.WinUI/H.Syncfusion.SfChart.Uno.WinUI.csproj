@@ -23,20 +23,6 @@
     <PackageReference Include="Uno.WinUI" Version="4.4.13" />
   </ItemGroup>
     
-  <ItemGroup>
-    <Page Include="**\*.xaml" Exclude="bin\**\*.xaml;obj\**\*.xaml" />
-    <Compile Update="**\*.xaml.cs">
-      <DependentUpon>%(Filename)</DependentUpon>
-    </Compile>
-    <UpToDateCheckInput Include="**\*.xaml" Exclude="bin\**\*.xaml;obj\**\*.xaml" />
-    <Compile Remove="Serialization\**" />
-    <EmbeddedResource Remove="Serialization\**" />
-    <None Remove="Serialization\**" />
-    <Page Remove="Serialization\**" />
-    <UpToDateCheckInput Remove="Serialization\**" />
-    <None Remove="Themes\*.xaml" />
-    <UpToDateCheckInput Remove="Themes\*.xaml" />
-  </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)'=='netstandard2.0'">
     <EmbeddedResource Include="LinkerDefinition.Wasm.xml">
       <LogicalName>$(AssemblyName).xml</LogicalName>
